@@ -1,0 +1,8 @@
+CREATE TABLE `user` (
+  `id` bigint(20) NOT NULL COMMENT 'id',
+  `username` varchar(100) NOT NULL COMMENT '用户名',
+  `password` varchar(100) NOT NULL COMMENT '密码',
+  `createtime` datetime NOT NULL COMMENT '创建时间',
+  `status` varchar(100) DEFAULT NULL COMMENT '状态',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户表';
